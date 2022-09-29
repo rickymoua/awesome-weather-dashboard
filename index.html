@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>awesome weather dashboard</title>
 
 </head>
 <body>
-    
+    <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1 w-100 text-center">Awesome Weather Dashboard</span>
+</nav>
+    <div class="container">
+        <div class="row">
+        <div class="col-4 bg-light">
+            <p class="seacr-header my-1">City search</p>
+            <div class = "input-group mb-3">
+            
+                <input id="city-input" type="text" class="form-control" placeholder="search city name">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+            <form id="history"></form>
+        </div>
+            </div>
+        </div>
 </body>
 </html>
